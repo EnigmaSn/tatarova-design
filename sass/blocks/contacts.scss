@@ -1,0 +1,11 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+
+  a {
+    text-align: right;
+    padding-right: 25px;
+    color: $light-gray;
+  }
+}

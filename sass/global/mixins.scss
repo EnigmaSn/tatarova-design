@@ -9,6 +9,22 @@
 	   width: 1080px;
 	  }
 }
+@mixin visuallyHidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+@mixin form-bg {
+	background: -moz-linear-gradient( -110deg, rgb(48,178,212) 0%, rgb(44,162,194) 47%, rgb(40,146,175) 100%);
+	background: -webkit-linear-gradient( -110deg, rgb(48,178,212) 0%, rgb(44,162,194) 47%, rgb(40,146,175) 100%);
+	background: -ms-linear-gradient( -110deg, rgb(48,178,212) 0%, rgb(44,162,194) 47%, rgb(40,146,175) 100%);
+	background: linear-gradient( -110deg, rgb(48,178,212) 0%, rgb(44,162,194) 47%, rgb(40,146,175) 100%);
+}
 
 @mixin side-padding {
 	padding-left: 30px;

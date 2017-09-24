@@ -1,7 +1,10 @@
-@import "global/body.scss";
-@import "global/fonts.scss";
 @import "global/variables.scss";
+@import "global/fonts.scss";
 @import "global/mixins.scss";
+@import "global/body.scss";
 
 @import "blocks/page-header.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/contacts.scss";
+@import "blocks/book.scss";
 @import "blocks/page-footer.scss";

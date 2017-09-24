@@ -8,7 +8,7 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="wrapper page-header__wrapper">
+    <div class="wrapper wrapper--page-header">
       <img src="img/logo.png" alt="Логотип" width="224" height="43">
       <section class="contacts">
       <a href=”tel:89869666050” class="contacts__phone">8 986 966 6050</a>
@@ -19,16 +19,18 @@
   <main>
     <div class="wrapper">
       <section class="book">
-        <img src="img/book.png" alt="Книга" width="422" height="502">
+        <div class="book__img">
+          <img src="img/book.png" alt="Книга" width="422" height="502">
+        </div>
         <div class="book__description">
           <h1>Как стать дизайнером интерьера?</h1>
           <span>7 простых шагов к профессии</span>
-          <b>Книга + Мастер-класс</b>
-          <b class="book__prev-price">1500 рублей</b>
-          <form action="#">
+          <b class="book__info">Книга + Мастер-класс</b>
+          <b class="book__info book__info--line">1500 рублей</b>
+          <form class="book__form" action="#">
             <legend>Получить книгу и доступ бесплатно на ваш e-mail:</legend>
             <div>
-              <label for="e-mail"></label>
+              <label for="e-mail">Введите e-mail</label>
               <input id="e-mail" type="text" placeholder="Введите e-mail" required>
               <input type="submit" value="Получить бесплатно">
             </div>
@@ -104,7 +106,7 @@
   <footer class="page-footer">
     <div class="wrapper">
       <section class="page-footer__info">
-        <p>Copyright 2011-2016</p>
+        <p>Copyright 2011-2017</p>
         <p>© Школа коммерческого дизайна интерьера Галины Татаровой
           <a href="www.desclub-training.ru">www.desclub-training.ru</a> | ИП Татарова Г.А. | <a href=”mailto:mail@desclub-training.ru">mail@desclub-training.ru</a></p>
       </section>

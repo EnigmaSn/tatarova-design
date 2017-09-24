@@ -1,6 +1,15 @@
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  color: #000000;
+  color: $black;
   width: 100%;
   margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
