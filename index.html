@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Design club</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -39,24 +41,16 @@
       </section>
       <section class="about-book">
         <h2>Что вы узнаете из книги</h2>
-        <ul>
-          <li class="about-book__item about-book__item--profession">
-            <p>Как получить творческую профессию и реализовать в ней свой креативный  потенциал.</p>
-          </li>
-          <li class="about-book__item about-book__item--start">
-            <p>С чего начать, если вы хотите сделать свою жизнь более творческой и заниматься любимым делом.</p>
-          </li>
-          <li class="about-book__item about-book__item--master">
-            <p>Как за 5 месяцев стать настоящим профессионалом в сфере дизайна интерьера.</p>
-          </li>
-          <li class="about-book__item about-book__item--time">
-            <p>Как за 5 месяцев стать настоящим профессионалом в сфере дизайна интерьера.</p>
-          </li>
+        <ul class="about-book__items">
+          <li class="about-book__item about-book__item--profession">Как получить творческую профессию и реализовать в ней свой креативный  потенциал.</li>
+          <li class="about-book__item about-book__item--start">С чего начать, если вы хотите сделать свою жизнь более творческой и заниматься любимым делом.</li>
+          <li class="about-book__item about-book__item--master">Как за 5 месяцев стать настоящим профессионалом в сфере дизайна интерьера.</li>
+          <li class="about-book__item about-book__item--time">Как с нуля выйти на доход в сфере дизайна интерьера от 100 000 рублей и развиваться.</li>
         </ul>
       </section>
       <section class="about-mc">
         <h2>Что вы узнаете из мастер-класса</h2>
-        <ul>
+        <ul class="about-mc__items">
           <li>Что такое дизайн проект и из чего он состоит?</li>
           <li>Кто ваши клиенты и за что они готовы платить?</li>
           <li>Пошаговый план создания дизайн проекта интерьера</li>
@@ -72,39 +66,41 @@
           <li>Куда расти и как развиваться в профессии?</li>
         </ul>
       </section>
-      <div class="course"></div>
-      <div class="course__author">
-        <img src="#" alt="Фото автора">
-        <div>
-          <h3>Автор: Галина Татарова</h3>
-          <ul>
-            <li>Специалист;</li>
-            <li>Архитектор;</li>
-            <li>Дизайнер;</li>
-            <li>14 лет опыта;</li>
-            <li>Реализовано более 100 интерьерных проектов жилых и общественных интерьеров.</li>
-          </ul>
+      <div class="course">
+        <div class="course__author">
+          <img src="img/author.jpg" alt="Фото автора">
+          <div>
+            <b>Автор:</b>
+            <b>Галина Татарова</b>
+            <ul class="course__author-rate">
+              <li>Специалист;</li>
+              <li>Архитектор;</li>
+              <li>Дизайнер;</li>
+              <li>14 лет опыта;</li>
+              <li>Реализовано более 100 интерьерных проектов жилых и общественных интерьеров.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="course__get">
+          <form action="#">
+            <legend>Получите книгу и доступ к мастер-классу
+              бесплатно на ваш e-mail:</legend>
+            <div>
+              <label for="e-mail">Введите e-mail</label>
+              <input type="text" placeholder="Введите e-mail" required>
+              <input type="submit" value="Получить">
+            </div>
+          </form>
+          <div class="course__gift">
+            <h3>Выиграйте <br> 30 000 рублей</h3>
+            <p>Выиграйте главный приз - обучение на базовом курсе коммерческого дизайна интерьера стоимостью 30 000 рублей.</p>
+          </div>
         </div>
       </div>
-      <div class="course__get">
-      <form action="#">
-        <legend>Получите книгу и доступ к мастер-классу
-          бесплатно на ваш e-mail:</legend>
-        <div>
-          <label for="e-mail"></label>
-          <input type="text" placeholder="Введите e-mail" required>
-          <input type="submit" value="Получить">
-        </div>
-      </form>
-      <div class="course__gift">
-        <h3>Выиграйте 30 000 рублей</h3>
-        <p>Участники получают возможность выиграть главный приз - обучение на базовом курсе коммерческого дизайна интерьера стоимостью 30 000 рублей.</p>
-      </div>
-    </div>
     </div>
   </main>
   <footer class="page-footer">
-    <div class="wrapper">
+    <div class="wrapper wrapper--page-footer">
       <section class="page-footer__info">
         <p>Copyright 2011-2017</p>
         <p>© Школа коммерческого дизайна интерьера Галины Татаровой

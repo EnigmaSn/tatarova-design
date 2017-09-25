@@ -7,9 +7,26 @@ body {
 a {
   text-decoration: none;
 }
+h2 {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
+

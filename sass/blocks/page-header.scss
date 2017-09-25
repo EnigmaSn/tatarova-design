@@ -1,11 +1,29 @@
 .page-header {
-  background-color: $body-bg;
-  display: flex;
-  justify-content: flex-end;
+  display: none;
+  justify-content: center;
   flex-direction: column;
   width: 100%;
+  min-height: 60px;
 
   img {
-    display: block;
+    display: none;
   }
+}
+
+@media #{$tablet-widths} {
+
+}
+
+@media #{$desktop-widths} {
+    .page-header {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      min-height: 90px;
+
+      img {
+        display: block;
+      }
+    }
 }

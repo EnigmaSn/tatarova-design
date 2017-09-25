@@ -1,100 +1,33 @@
 .page-footer {
-  background-color: $gray-bg;
+  background-color: $light-gray;
+  min-height: 90px;
   width: 100%;
-}
-
-.page-footer__wrapper {
-  @include container;
+  position: relative;
   display: flex;
-  flex-direction: column;
-}
 
-.page-footer__logo {
-  display: none;
+  &:after {
+    content: "";
+    background-color: $light-gray;
+    background-image: url("../img/footer-bg.png");
+    background-position: center;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  }
 }
-.page-footer__social {
-  border-bottom: 1px solid #e5e5e5;
-  @include side-margin;
-    ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 0;
-      margin-left: 60px;
-      margin-right: 60px;
+.page-footer__info {
+  width: 450px;
+  color: $lighter-gray;
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  a {
+    color: $lighter-gray;
 
-    }
-    li {
-      list-style-type: none;
-      display: flex;
-      padding-top: 10px;
-      padding-bottom: 4px;
-    }
-    li:nth-child(2) {
-      padding: 7px;
-      padding-bottom: 4px;
-      padding-left: 44px;
-      padding-right: 38px;
-    }
-    a {
-      display: flex;
-      text-decoration: none;
-    }
-}
-.social-btn {
-  font-size: 0;
-}
-
-.page-footer__made-by {
-  display: flex;
-  justify-content: center;
-  margin-top: 25px;
-  margin-bottom: 15px;
-    span {
-      font-size: 19px;
-      font-weight: bold;
-      margin-right: 30px;
-    }
-}
-
-@media #{$tablet-widths} {
-  .page-footer {
-    min-height: 139px;
-    border-bottom: none;
   }
-  .page-footer__logo {
-    display: flex;
-    // width: 250px;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 100px;
-  }
-  .page-footer__social {
-    // width: 250px;
-    margin-top: 33px;
-    margin-left: 0;
-    margin-right: 22px;
-    border-bottom: none;
-  }
-  .page-footer__made-by {
-    // width: 250px;
-    margin-top: 60px;
-    // margin-right: 80px;
-  }
-  .page-footer__wrapper {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-}
-
-@media #{$desktop-widths} {
-  .page-footer__logo {
-    margin-right: 290px;
-  }
-  .page-footer__social {
-    margin-right: 215px;
-  }
-  // .page-footer__made-by {
-  //   width: 350px;
-  // }
 }

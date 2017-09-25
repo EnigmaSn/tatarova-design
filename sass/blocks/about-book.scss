@@ -1,0 +1,91 @@
+.about-book {
+  h2 {
+    font-size: 26px;
+    line-height: 30px;
+    width: 260px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0 auto;
+  }
+}
+
+.about-book__items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 260px;
+  margin: 0;
+  padding: 0;
+}
+.about-book__item {
+  padding: 0;
+  margin: 0;
+  width: 260px;
+  padding-top: 100px;
+  position: relative;
+  margin-bottom: 70px;
+  color: $light-gray;
+
+  &:before {
+    content: "";
+    display: table;
+    width: 78px;
+    height: 78px;
+    background-repeat: no-repeat;
+    top: 0;
+    @include hor-align;
+
+  }
+
+  &--profession:before {
+    background-image: url("../img/002-paint-palette.svg");
+  }
+  &--start:before {
+    background-image: url("../img/001-thinking.svg");
+  }
+  &--master:before {
+    background-image: url("../img/004-presentation.svg");
+  }
+  &--time:before {
+    background-image: url("../img/003-piggy-bank.svg");
+  }
+}
+
+@media #{$tablet-widths} {
+  .about-book {
+    h2 {
+      font-size: 30px;
+      line-height: 30px;
+      width: 100%;
+    }
+  }
+  .about-book__items {
+    flex-direction: row;
+    width: 550px;
+  }
+
+}
+
+@media #{$desktop-widths} {
+  .about-book {
+    h2 {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+  .about-book__items {
+    justify-content: space-between;
+    width: 825px;
+  }
+  .about-book__item {
+    padding-left: 108px;
+    width: 365px;
+
+    &:before {
+      width: 78px;
+      height: 78px;
+    }
+  }
+}

@@ -5,8 +5,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  //@include side-padding;
 
   &--page-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &--page-footer {
+    justify-content: space-between;
+    z-index: 1;
+  }
+}
+
+@media #{$tablet-widths} {
+  &--page-header {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  &--page-footer {
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 1;
+  }
+
+}
+@media #{$desktop-widths} {
+  &--page-header {
+    display: flex;
     justify-content: space-between;
     flex-direction: row;
   }

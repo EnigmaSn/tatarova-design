@@ -2,33 +2,44 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-
+  position: relative;
+  margin-top: 25px;
   h1 {
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 35px;
     text-transform: uppercase;
-    width: 350px;
     color: $black;
     letter-spacing: 1px;
+    text-align: center;
+    margin: 0 auto;
 
     &:after {
       content: "";
       display: table;
       width: 100px;
       height: 6px;
+      margin: 15px auto;
       background-color: $black;
     }
   }
   span {
     color: $light-gray;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 25px;
     display: block;
+    margin-bottom: 5px;
+  }
+}
+.book__img {
+  display: none;
+  img {
+    width: 100px;
+    height: auto;
   }
 }
 .book__info {
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 22px;
+  line-height: 26px;
   font-weight: bold;
   display: block;
   position: relative;
@@ -38,7 +49,7 @@
       position: absolute;
       content: "";
       display: table;
-      width: 190px;
+      width: 138px;
       height: 6px;
       background-color: $red;
       top: 50%;
@@ -49,33 +60,17 @@
 
 .book__form {
   @include form-bg;
-  padding: 30px;
-  width: 590px;
+  padding: 20px;
+  width: 260px;
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column;
 
   legend {
     color: $white;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 20px;
     position: relative;
-    display: block;
-    margin: 0 auto;
-
-    &:before,
-    &:after {
-      position: absolute;
-      width: 50px;
-      height: 2px;
-      background-color: $white;
-      content: "";
-      display: table;
-      top: 50%;
-    }
-    &:before {
-      left: -75px;
-    }
-    &:after {
-      right: -75px;
-    }
   }
   label {
     @include visuallyHidden;
@@ -83,12 +78,13 @@
 
   div {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 15px;
 
   }
   input {
-    min-height: 50px;
+    height: 50px;
     font-size: 18px;
     line-height: 18px;
     border: 0;
@@ -96,18 +92,159 @@
   }
   input[type="text"] {
     padding: 0px 25px;
-    width: 300px;
 
   }
   input[type="submit"] {
     color: $white;
     background-color: $btn1;
-    width: 220px;
     text-align: center;
     padding: 0 27px;
     cursor: pointer;
+    margin-top: 10px;
   }
   input[type="submit"]:hover {
     background-color: darken($btn1, 10%);
+  }
+}
+
+@media #{$tablet-widths} {
+  .book {
+
+    h1 {
+      font-size: 40px;
+      line-height: 45px;
+      width: 300px;
+      text-align: left;
+
+
+      &:after {
+        margin:15px 0;
+      }
+    }
+    span {
+      color: $light-gray;
+      font-size: 18px;
+      line-height: 18px;
+      display: block;
+    }
+  }
+  .book__img {
+    display: block;
+    position: absolute;
+    left: 340px;
+    @include vertical-align;
+
+    img {
+      width: 357px;
+      height: auto;
+    }
+  }
+  .book__form {
+    width: 300px;
+  }
+}
+@media #{$desktop-widths} {
+  .book {
+
+    h1 {
+      font-size: 45px;
+      line-height: 50px;
+      width: 350px;
+      margin: 0;
+
+      &:after {
+        content: "";
+        display: table;
+        width: 100px;
+        height: 6px;
+        background-color: $black;
+      }
+    }
+    span {
+      color: $light-gray;
+      font-size: 18px;
+      line-height: 18px;
+      display: block;
+    }
+  }
+  .book__img {
+    position: relative;
+    left: 0;
+    transform: none;
+    top: 8px;
+
+    img {
+      width: 422px;
+    }
+  }
+  .book__info {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    display: block;
+    position: relative;
+
+    &--line {
+      &:after {
+        position: absolute;
+        content: "";
+        display: table;
+        width: 190px;
+        height: 6px;
+        background-color: $red;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .book__form {
+    @include form-bg;
+    padding: 30px;
+    width: 590px;
+
+    legend {
+      color: $white;
+      font-size: 18px;
+      line-height: 18px;
+      position: relative;
+      display: block;
+      margin: 0 auto;
+
+      &:before,
+      &:after {
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background-color: $white;
+        content: "";
+        display: table;
+        top: 50%;
+      }
+      &:before {
+        left: -65px;
+      }
+      &:after {
+        right: -65px;
+      }
+    }
+
+    div {
+
+      padding-top: 20px;
+      flex-direction: row;
+      align-items: baseline;
+
+    }
+    input {
+
+    }
+    input[type="text"] {
+      width: 300px;
+    }
+    input[type="submit"] {
+      width: 220px;
+      text-align: center;
+    }
   }
 }
