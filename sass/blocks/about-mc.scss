@@ -6,7 +6,7 @@
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
-    margin: 0 auto;
+    margin: 5px auto 30px;
   }
 }
 .about-mc__items {
@@ -41,13 +41,13 @@
       font-size: 30px;
       line-height: 30px;
       width: 100%;
+      margin: 15px auto 50px;
     }
   }
   .about-mc__items {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 650px;
-    justify-content: space-between;
+    width: 580px;
   }
 
 }

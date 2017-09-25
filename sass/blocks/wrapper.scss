@@ -19,21 +19,29 @@
 }
 
 @media #{$tablet-widths} {
-  &--page-header {
-    justify-content: space-between;
-    flex-direction: row;
+  .wrapper {
+    &--page-header {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    &--page-footer {
+      justify-content: space-between;
+      flex-direction: row;
+      z-index: 1;
+    }
   }
-  &--page-footer {
-    justify-content: space-between;
-    flex-direction: row;
-    z-index: 1;
-  }
-
 }
 @media #{$desktop-widths} {
-  &--page-header {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+  .wrapper {
+    &--page-header {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    &--page-footer {
+      justify-content: space-between;
+      flex-direction: row;
+      z-index: 1;
+    }
   }
 }
