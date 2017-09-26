@@ -96,7 +96,9 @@
   }
   input[type="text"] {
     padding: 0px 25px;
-
+  }
+  input[type="text"]:hover {
+    background-color: darken(#fff, 5%);
   }
   input[type="submit"] {
     color: $white;
@@ -105,9 +107,12 @@
     padding: 0 27px;
     cursor: pointer;
     margin-top: 10px;
+    @include transition;
   }
   input[type="submit"]:hover {
     background-color: darken($btn1, 10%);
+    @include transition;
+
   }
 }
 

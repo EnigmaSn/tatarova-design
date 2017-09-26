@@ -9,6 +9,9 @@
    width: 1080px;
   }
 }
+@mixin transition {
+  transition: all 0.2s ease-in-out 0s;
+}
 @mixin vertical-align {
 	position: absolute;
 	top: 50%;

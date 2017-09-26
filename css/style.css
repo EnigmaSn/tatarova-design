@@ -250,6 +250,8 @@ li {
     font-family: 'Roboto Condensed', sans-serif; }
   .book__form input[type="text"] {
     padding: 0px 25px; }
+  .book__form input[type="text"]:hover {
+    background-color: #f2f2f2; }
   .book__form input[type="submit"] {
     color: #ffffff;
     background-color: #db2837;
@@ -432,10 +434,15 @@ li {
     width: 825px; }
   .about-book__item {
     padding-left: 108px;
-    width: 365px; }
+    width: 365px;
+    padding-top: 0; }
     .about-book__item:before {
       width: 78px;
-      height: 78px; } }
+      height: 78px;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); } }
 
 .about-mc h2 {
   font-size: 26px;
@@ -574,6 +581,8 @@ li {
     font-family: 'Roboto Condensed', sans-serif; }
   .course__get form input[type="text"] {
     padding: 0 25px; }
+  .course__get form input[type="text"]:hover {
+    background-color: #f2f2f2; }
   .course__get form input[type="submit"] {
     color: #ffffff;
     background-color: #db2837;
@@ -634,7 +643,7 @@ li {
     width: 560px;
     margin: 0 auto;
     padding: 25px;
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
     .course__get form div {
       flex-direction: row; }
     .course__get form input[type="text"] {
@@ -669,15 +678,23 @@ li {
     .course__author img {
       width: 280px;
       height: auto;
-      margin-right: 10px; }
+      margin: 0;
+      margin-right: 25px; }
     .course__author b {
       font-size: 20px;
       line-height: 24px;
       display: block;
       text-transform: uppercase;
       letter-spacing: 1px; }
-  .course__author-rate li {
-    width: 100%; }
+  .course__author-rate {
+    margin-top: 30px; }
+    .course__author-rate li {
+      width: 100%;
+      padding-bottom: 10px; }
+    .course__author-rate li:nth-child(3) {
+      padding-bottom: 25px; }
+    .course__author-rate li:nth-child(4) {
+      padding-bottom: 25px; }
   .course__get {
     width: 524px; }
     .course__get form {
@@ -784,5 +801,11 @@ li {
     color: #d4d2d2; }
 
 @media (min-width: 768px) {
+  .page-footer {
+    margin-top: 40px; }
   .page-footer__info {
     width: 450px; } }
+
+@media (min-width: 1080px) {
+  .page-footer {
+    margin-top: 50px; } }

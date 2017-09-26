@@ -35,10 +35,15 @@
 }
 
 @media #{$tablet-widths} {
+  .page-footer {
+    margin-top: 40px;
+  }
   .page-footer__info {
     width: 450px;
   }
 }
 @media #{$desktop-widths} {
-
+  .page-footer {
+    margin-top: 50px;
+  }
 }
